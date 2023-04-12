@@ -35,7 +35,6 @@ export default function Navbar(props) {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/preetham-s-1117aa23b/",
       external: true,
-      badge: "new"
     },
     {
       label: "Github",
@@ -86,7 +85,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        My Blog
                       </span>
                     )}
                   </Link>
