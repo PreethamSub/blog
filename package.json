@@ -2,8 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "install": "pnpm install --no-frozen-lockfile",
+    "build": "pnpm install --no-frozen-lockfile next build",
     "postbuild": "next-sitemap",
     "start": "next start",
     "sanity": "sanity dev",
