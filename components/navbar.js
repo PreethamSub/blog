@@ -32,14 +32,14 @@ export default function Navbar(props) {
       href: "/archive"
     },
     {
-      label: "Pro Version",
-      href: "https://stablo-pro.web3templates.com/",
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/preetham-s-1117aa23b/",
       external: true,
       badge: "new"
     },
     {
-      label: "Download",
-      href: "https://web3templates.com/templates/stablo-minimal-blog-website-template",
+      label: "Github",
+      href: "https://github.com/PreethamSub",
       external: true
     }
   ];
@@ -100,7 +100,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        My Blog
                       </span>
                     )}
                   </Link>
