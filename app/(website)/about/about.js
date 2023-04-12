@@ -22,7 +22,7 @@ export default function About({ authors, settings }) {
               className="relative overflow-hidden rounded-md aspect-square odd:translate-y-10 odd:md:translate-y-16">
               <Link href={`/author/${author.slug}`}>
                 <Image
-                  src={imageProps.src}
+                  src={imageProps.src || " "}
                   alt={author.name || " "}
                   fill
                   sizes="(max-width: 320px) 100vw, 320px"
