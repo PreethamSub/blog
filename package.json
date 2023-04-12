@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "install": "pnpm install --no-frozen-lockfile",
     "postbuild": "next-sitemap",
     "start": "next start",
     "sanity": "sanity dev",
