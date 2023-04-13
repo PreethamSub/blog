@@ -4,11 +4,11 @@ export default function Portfolio(props) {
     return (
         <>
         <div className="container px-8 mx-auto xl:px-5  max-w-screen-lg py-5 lg:py-8">
-        <div className="grid gap-3 md:grid-cols-1 lg:gap-5 rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30 mt-3 mb-4">
+        <div className="grid gap-3 md:grid-cols-1 lg:gap-2 rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30 mt-3 mb-4">
             <h2 className="text-3xl font-semibold">Hello!</h2>
             <h1 className="text-3xl font-bold">I'm Preetham</h1>
             <p>
-                A passionate Artificial Intelligence Engineer.<br/>
+                A passionate Artificial Intelligence Enthusiast.<br/>
             </p>
         </div>
         <main className="grid gap-10 md:grid-cols-1 lg:gap-10">

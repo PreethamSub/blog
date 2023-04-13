@@ -10,10 +10,9 @@ import {
   EnvelopeIcon,
   PhoneIcon
 } from "@heroicons/react/24/outline";
+import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { config } from '@fortawesome/fontawesome-svg-core'
-import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false
+import { faGithub, faGoogle, faInstagram, faLinkedIn, faDiscord } from '@fortawesome/free-brands-svg-icons'
 export default function Contact({ settings }) {
   return (
     <Container>
