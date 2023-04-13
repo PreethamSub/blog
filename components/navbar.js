@@ -46,13 +46,13 @@ export default function Navbar(props) {
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
-    <Container className="container px-8 mx-auto xl:px-5  max-w-screen-lg py-5 lg:py-8 mt-10 bg-gray-900 text-white w-full">
+    <Container className="bg-gray-900 text-white container px-8 mx-auto xl:px-5 max-w-screen-lg py-5 lg:py-8 mt-10 w-full">
       <nav>
         <Disclosure>
           {({ open }) => (
             <>
               <div className="flex flex-wrap justify-start md:flex-nowrap md:gap-10">
-                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-end">
+                <div className="order-1 hidden w-full flex-col items-center justify-start md:order-none md:flex md:w-auto md:flex-1 md:flex-row md:justify-start">
                   {leftmenu.map((item, index) => (
                     <Fragment key={`${item.label}${index}`}>
                       {item.children && item.children.length > 0 ? (
