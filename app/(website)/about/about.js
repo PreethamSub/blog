@@ -8,8 +8,10 @@ export default function About({ authors, settings }) {
   return (
     <Container>
       <Portfolio/>
-      <div className="text-center">
-      <div className="grid grid-cols-1 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
+      {/**
+       * Authors images
+       * <div className="text-center">
+       * <div className="grid grid-cols-1 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image);
           return (
@@ -30,10 +32,13 @@ export default function About({ authors, settings }) {
         })}
       </div>
       </div>
+      **/}
+      
 
-      <div className="mx-auto prose text-center dark:prose-invert mt-14">
+      <div className="mx-auto prose text-left dark:prose-invert mt-14">
+      <h2 className="text-3xl font-bold">A little less formally...</h2>
         <p>
-        A little less formally,<br/>I am an enthusiastic and hardworking individual with a passion for Artificial Intelligence 
+        I am an enthusiastic and hardworking individual with a passion for Artificial Intelligence 
         and Machine Learning. I am currently pursuing my undergraduate studies in AIML and have 
         gained practical knowledge in various AI domains like Natural Language Processing and 
         Computer Vision. I enjoy solving complex problems and constantly strive 
