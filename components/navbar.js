@@ -47,7 +47,7 @@ export default function Navbar(props) {
 
   return (
     <Container>
-      <nav>
+      <nav className="bg-gray-900">
         <Disclosure>
           {({ open }) => (
             <>

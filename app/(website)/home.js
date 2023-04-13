@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Container from "@/components/container";
 import PostList from "@/components/postlist";
+import Portfolio from "@/components/portfolio";
 
 export default function Post({ posts }) {
   return (
     <>
+    <Portfolio/>
       {posts && (
         <Container>
           <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
