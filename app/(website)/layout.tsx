@@ -12,7 +12,7 @@ export async function sharedMetaData(params) {
       default:
         settings?.title ||
         "Deepminer - The AI&ML Blog",
-      template: "%s | Stablo"
+      template: "%s | Deepminer"
     },
     description:
       settings?.description ||
