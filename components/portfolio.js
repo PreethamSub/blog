@@ -4,7 +4,7 @@ export default function Portfolio(props) {
     return (
         <>
         <div
-            class="rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
+            class="container rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
             <h2 class="mb-2 text-3xl font-semibold">Hello!</h2>
             <h1 class="mb-1 text-3xl font-bold">I'm Preetham</h1>
             <p>
