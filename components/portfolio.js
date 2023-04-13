@@ -3,7 +3,7 @@ import Script from 'next/script'
 export default function Portfolio(props) {
     return (
         <>
-<main className="container mx-auto">
+        <main className="grid grid-cols-1 justify-center">
         <section className="my-2" id="about">
           <h2 className="text-3xl font-bold">About Me</h2>
           <p className="text-lg">
