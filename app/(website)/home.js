@@ -9,8 +9,8 @@ export default function Post({ posts }) {
     <Portfolio/>
       {posts && (
         <Container>
-          <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
           <h2 className="text-3xl font-bold">Recent Posts</h2>
+          <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
             {posts.slice(0, 2).map(post => (
               <PostList
                 key={post._id}

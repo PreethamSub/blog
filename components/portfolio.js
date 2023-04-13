@@ -4,8 +4,7 @@ export default function Portfolio(props) {
     return (
         <>
         <div className="container px-8 mx-auto xl:px-5  max-w-screen-lg py-5 lg:py-8">
-        <h1 className="text-3xl font-bold">My Portfolio</h1>
-        <div className="grid gap-3 md:grid-cols-1 lg:gap-5 rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30 mb-2">
+        <div className="grid gap-3 md:grid-cols-1 lg:gap-5 rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30 mt-3 mb-4">
             <h2 className="text-3xl font-semibold">Hello!</h2>
             <h1 className="text-3xl font-bold">I'm Preetham</h1>
             <p>
@@ -13,7 +12,7 @@ export default function Portfolio(props) {
             </p>
         </div>
         <main className="grid gap-10 md:grid-cols-1 lg:gap-10">
-        <section className="my-2" id="about">
+        <section className="mt-2 mb-1" id="about">
           <h2 className="text-3xl font-bold">About Me</h2>
           <p className="text-lg">
             I am an undergraduate student studying AIML, with a passion for exploring the possibilities of artificial intelligence and machine learning. I enjoy learning about cutting-edge technologies and developing innovative solutions to real-world problems. My goal is to leverage my skills and knowledge to make a positive impact on society and contribute to the advancement of the field.
