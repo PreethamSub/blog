@@ -46,7 +46,7 @@ export default function Navbar(props) {
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
-    <Container className="border-b border-gray-500 dark:border-gray-800 px-8 xl:px-5 max-w-screen-lg py-5 lg:py-8 w-full">
+    <Container className="border-b border-gray-200 dark:border-gray-800 px-8 xl:px-5 max-w-screen-lg py-5 lg:py-8 w-full">
       <nav>
         <Disclosure>
           {({ open }) => (
@@ -85,7 +85,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        My Blog
+                        <h3>Deepminer</h3>
                       </span>
                     )}
                   </Link>
