@@ -2,6 +2,7 @@ import Container from "@/components/container";
 import { urlForImage } from "@/lib/sanity/image";
 import Image from "next/image";
 import Link from "next/link";
+import Portfolio from "@/components/portfolio";
 
 export default function About({ authors, settings }) {
   return (
