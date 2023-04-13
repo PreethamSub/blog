@@ -26,7 +26,7 @@ export default function Portfolio(props) {
 
         <section id="certifications">
           <div>
-            <h2 className="text-3xl font-bold mb-3">Certifications</h2>
+            <h2 className="text-3xl font-bold mb-5">Certifications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="justify-self-center">
                 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="271caad8-0fe6-4cf5-a103-93bd9b3a7e26" data-share-badge-host="https://www.credly.com"></div>
