@@ -21,7 +21,7 @@ export default function About({ authors, settings }) {
                   src={imageProps.src || " "}
                   alt={author.name || " "}
                   fill
-                  sizes="(max-width: 320px) 100vw, 320px"
+                  sizes="100px"
                   className="object-cover"
                 />
               </Link>
@@ -33,7 +33,7 @@ export default function About({ authors, settings }) {
 
       <div className="mx-auto prose text-center dark:prose-invert mt-14">
         <p>
-        A little less formally<br/>I am an enthusiastic and hardworking individual with a passion for Artificial Intelligence 
+        A little less formally,<br/>I am an enthusiastic and hardworking individual with a passion for Artificial Intelligence 
         and Machine Learning. I am currently pursuing my undergraduate studies in AIML and have 
         gained practical knowledge in various AI domains like Natural Language Processing and 
         Computer Vision. I enjoy solving complex problems and constantly strive 
