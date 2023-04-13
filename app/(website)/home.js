@@ -6,10 +6,15 @@ import Portfolio from "@/components/portfolio";
 export default function Post({ posts }) {
   return (
     <>
-    <Portfolio/>
       {posts && (
         <Container>
-          <h2 className="text-3xl font-bold mb-2">Recent Posts</h2>
+          <div className="grid gap-3 md:grid-cols-1 lg:gap-2 rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30 mt-3 mb-4">
+            <h2 className="text-3xl font-semibold">Hello!</h2>
+            <h1 className="text-3xl font-bold">I'm Preetham</h1>
+            <p>
+                A passionate Artificial Intelligence Enthusiast.<br/>
+            </p>
+        </div>
           <div className="grid gap-10 md:grid-cols-2 lg:gap-10 ">
             {posts.slice(0, 2).map(post => (
               <PostList

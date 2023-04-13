@@ -6,11 +6,9 @@ import Link from "next/link";
 export default function About({ authors, settings }) {
   return (
     <Container>
-      <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl dark:text-white">
-        About Me
-      </h1>
+      <Portfolio/>
       <div className="text-center">
-      <div className="grid grid-cols-3 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
+      <div className="grid grid-cols-1 gap-5 mt-6 mb-16 md:mt-16 md:mb-32 md:gap-16">
         {authors.slice(0, 3).map(author => {
           const imageProps = urlForImage(author?.image);
           return (
@@ -34,7 +32,7 @@ export default function About({ authors, settings }) {
 
       <div className="mx-auto prose text-center dark:prose-invert mt-14">
         <p>
-        I am an enthusiastic and hardworking individual with a passion for Artificial Intelligence 
+        A little less formally<br/>I am an enthusiastic and hardworking individual with a passion for Artificial Intelligence 
         and Machine Learning. I am currently pursuing my undergraduate studies in AIML and have 
         gained practical knowledge in various AI domains like Natural Language Processing and 
         Computer Vision. I enjoy solving complex problems and constantly strive 
