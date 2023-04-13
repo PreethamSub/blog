@@ -3,15 +3,14 @@ import Script from 'next/script'
 export default function Portfolio(props) {
     return (
         <>
-        <div
-            class="container rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
-            <h2 class="mb-2 text-3xl font-semibold">Hello!</h2>
-            <h1 class="mb-1 text-3xl font-bold">I'm Preetham</h1>
+        <div className="container px-8 mx-auto xl:px-5  max-w-screen-lg py-5 lg:py-8">
+        <div className="grid gap-10 md:grid-cols-1 lg:gap-10 rounded-lg bg-neutral-100 p-6 text-neutral-700 shadow-lg dark:bg-neutral-600 dark:text-neutral-200 dark:shadow-black/30">
+            <h2 className="mb-2 text-3xl font-semibold">Hello!</h2>
+            <h1 className="mb-1 text-3xl font-bold">I'm Preetham</h1>
             <p>
                 A passionate Artificial Intelligence Engineer.<br/>
             </p>
         </div>
-        <div className="container px-8 mx-auto xl:px-5  max-w-screen-lg py-5 lg:py-8">
         <main className="grid gap-10 md:grid-cols-1 lg:gap-10">
         <section className="my-2" id="about">
           <h2 className="text-3xl font-bold">About Me</h2>
@@ -36,7 +35,7 @@ export default function Portfolio(props) {
           <div>
             <h2 className="text-3xl font-bold mb-3">Certifications</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="justify-end pl-2">
+              <div className="justify-items-end pr-2">
                 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="271caad8-0fe6-4cf5-a103-93bd9b3a7e26" data-share-badge-host="https://www.credly.com"></div>
                 <Script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"/>
               </div>
@@ -46,7 +45,7 @@ export default function Portfolio(props) {
                   Foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.
                 </p>
               </div>
-              <div className="justify-end pl-2">
+              <div className="justify-items-end pr-2">
                 <div data-iframe-width="200" data-iframe-height="270" data-share-badge-id="dbc3bb08-9602-43ce-b14e-99086fa9a55f" data-share-badge-host="https://www.credly.com"></div>
                 <Script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"/>
               </div>

@@ -46,7 +46,7 @@ export default function Navbar(props) {
   const mobilemenu = [...leftmenu, ...rightmenu];
 
   return (
-    <Container className="bg-gray-900 text-white px-8 xl:px-5 max-w-screen-lg py-5 lg:py-8 w-full">
+    <Container className="px-8 xl:px-5 max-w-screen-lg py-5 lg:py-8 w-full">
       <nav>
         <Disclosure>
           {({ open }) => (
