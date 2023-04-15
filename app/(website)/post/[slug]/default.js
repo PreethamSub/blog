@@ -16,7 +16,7 @@ export default function Post(props) {
 
   const slug = post?.slug;
 
-  const code = {
+  const codeContent = {
     types: {
       code: (props) => (
         <SyntaxHighlighter
@@ -114,7 +114,7 @@ export default function Post(props) {
       <Container>
         <article className="mx-auto max-w-screen-md ">
           <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
-            {post.body && <PortableText value={post.body} components={code} />}
+            {post.body && <PortableText value={post.body} components={codeContent} />}
           </div>
           <div className="mb-7 mt-7 flex justify-center">
             <Link
