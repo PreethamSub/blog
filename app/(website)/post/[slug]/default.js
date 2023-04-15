@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
 import { parseISO, format } from "date-fns";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
@@ -14,6 +16,26 @@ export default function Post(props) {
 
   const slug = post?.slug;
 
+  const code = {
+    types: {
+      code: (props) => (
+        <SyntaxHighlighter
+          language={props.node.language}
+          style={coldarkDark}
+          showLineNumbers
+          lineNumberStyle={{
+            padding: "0 5px 0 0",
+            fontSize: 14,
+            borderRight: "1.5px solid darkgray",
+            marginRight: "10px",
+          }}
+        >
+          {props.node.code}
+        </SyntaxHighlighter>
+      ),
+    }
+  };
+  
   if (!loading && !slug) {
     notFound();
   }
@@ -92,7 +114,7 @@ export default function Post(props) {
       <Container>
         <article className="mx-auto max-w-screen-md ">
           <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
-            {post.body && <PortableText value={post.body} />}
+            {post.body && <PortableText value={post.body} components={code} />}
           </div>
           <div className="mb-7 mt-7 flex justify-center">
             <Link
