@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { PortableText } from "@/lib/sanity/plugins/portabletext";
 import { urlForImage } from "@/lib/sanity/image";
 import { parseISO, format } from "date-fns";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 import CategoryLabel from "@/components/blog/category";
 import AuthorCard from "@/components/blog/authorCard";
@@ -16,9 +18,9 @@ export default function Post(props) {
 
   const codeContent = {
     types: {
-      code: (props) => (
+      code: (value) => (
         <SyntaxHighlighter
-          language={props.node.language}
+          language={value.node.language}
           style={coldarkDark}
           showLineNumbers
           lineNumberStyle={{
@@ -28,7 +30,7 @@ export default function Post(props) {
             marginRight: "10px",
           }}
         >
-          {props.node.code}
+          {value.node.code}
         </SyntaxHighlighter>
       ),
     }
