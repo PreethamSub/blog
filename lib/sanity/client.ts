@@ -80,7 +80,7 @@ export async function getAuthorPostsBySlug(slug) {
 
 export async function getAllAuthors() {
   if (client) {
-    return (await client.fetch(allauthorquery)) || [];
+    return (await client.fetch(allauthorsquery)) || [];
   }
   return [];
 }
