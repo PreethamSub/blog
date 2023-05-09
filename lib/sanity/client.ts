@@ -7,6 +7,7 @@ import {
   singlequery,
   pathquery,
   allauthorsquery,
+  oneauthorquery,
   authorsquery,
   postsbyauthorquery,
   postsbycatquery,
@@ -79,7 +80,14 @@ export async function getAuthorPostsBySlug(slug) {
 
 export async function getAllAuthors() {
   if (client) {
-    return (await client.fetch(allauthorsquery)) || [];
+    return (await client.fetch(allauthorquery)) || [];
+  }
+  return [];
+}
+
+export async function getOneAuthor(slug) {
+  if (client) {
+    return (await client.fetch(oneauthorquery, { slug })) || [];
   }
   return [];
 }
