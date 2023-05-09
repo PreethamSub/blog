@@ -21,7 +21,7 @@ export default function Author({ author }) {
         />
         <h2 className="mt-4 mb-2 text-xl font-medium text-gray-900 dark:text-white">{author.name}</h2>
           <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
-            {post.body && <PortableText value={post.body} />}
+            {author.bio && <PortableText value={author.bio} />}
           </div>
         </div>
     </Container>
