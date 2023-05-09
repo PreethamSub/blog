@@ -2,6 +2,7 @@ import Container from "@/components/container";
 import { urlForImage } from "@/lib/sanity/image";
 import Image from "next/image";
 import Link from "next/link";
+import { PortableText } from "@/lib/sanity/plugins/portabletext";
 
 export default function Author({ author }) {
   const imageProps = author?.image
@@ -19,8 +20,10 @@ export default function Author({ author }) {
           alt={`Photo of ${author.name}`}
         />
         <h2 className="mt-4 mb-2 text-xl font-medium text-gray-900 dark:text-white">{author.name}</h2>
-        <p className="prose text-gray-500 dark:text-gray-400">{author.bio}</p>
-      </div>
+          <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
+            {post.body && <PortableText value={post.body} />}
+          </div>
+        </div>
     </Container>
   );
 }
