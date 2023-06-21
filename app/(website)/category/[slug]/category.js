@@ -12,7 +12,7 @@ import {
 import { useState, useEffect } from "react";
 import { fetcher } from "@/lib/sanity/client";
 
-export default function Post({ posts: initialposts }) {
+export default function Category({ posts: initialposts }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const page = searchParams.get("page");
